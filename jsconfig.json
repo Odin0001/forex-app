@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
+    "baseUrl": ".", // Ensure this points to the root directory of your project
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./app/*"] // Adjust this to the correct subdirectory
     }
   }
 }

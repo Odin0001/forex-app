@@ -18,16 +18,29 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #202020;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* numbers shadow */
+.nums-down {
+  text-shadow: 0 0 0.75rem #f8877f;
+}
+
+.nums-gradient {
+  background: radial-gradient(circle at center, #001c30, #004271);
+}
+
+.perks-bg {
+  background: url(../public/candlesticks.jpg) no-repeat center;
+  background-size: cover;
 }
